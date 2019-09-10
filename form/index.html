@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="sent.html" method="get" autocomplete="on"><!--autocomplete guarda la info digitada en el formulario y se puede aplicar a nivel de form o a nivel de input-->
+    <form action="https://formspree.io/andres.nieto.arias@gmail.com" method="POST" autocomplete="on"><!--autocomplete guarda la info digitada en el formulario y se puede aplicar a nivel de form o a nivel de input, pero puede que no funcione en todos los navegadores-->
         <div>
             <label for="name">Name</label>
-            <input type="text" name="name" autofocus placeholder="Name" id="name" min="4" max="12"><!--autofocus selecciona por defecto el input al que se aplica--><!--min y max pone una validación a los caracteres-->
+            <input type="text" name="name" autofocus placeholder="Name" id="name" minlength="4" maxlength="12"><!--autofocus selecciona por defecto el input al que se aplica--><!--min y max pone una validación a los caracteres-->
         </div>
         <div>
             <label for="age">Age</label>
