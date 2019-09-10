@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="sent.html" method="get" autocomplete="on"><!--autocomplete guarda la info digitada en el formulario y se puede aplicar a nivel de form o a nivel de input-->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" autofocus placeholder="Name" id="name" min="4" max="12"><!--autofocus selecciona por defecto el input al que se aplica--><!--min y max pone una validación a los caracteres-->
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" placeholder="Age" id="age">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" required placeholder="Email" id="email"><!--required no deja enviar el formulario si el campo no está diligenciado-->
+        </div>
+        <div>
+            <label for="birthdate">Birth Date</label>
+            <input type="date" name="birthdate" required placeholder="Birth Date" id="birthdate" min="1950-1-1" max="1987-5-10"><!--required no deja enviar el formulario si el campo no está diligenciado-->
+        </div>
+        <div>
+            <input type="hidden"><!--envia parámetros ocultos como p ej las utm de la pauta digital-->
+        </div>
+        <div>
+            <label for="browser">Browser</label>
+            <input type="text" name="browser" required placeholder="Browser" list="browser"><!--list enlaza el input a un datalist-->
+            <datalist id="browser">
+                <option value="chrome"></option>
+                <option value="safari"></option>
+                <option value="firefox"></option>
+                <option value="edge"></option>
+            </datalist>           
+        </div>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
