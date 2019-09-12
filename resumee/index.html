@@ -35,7 +35,7 @@
             </hgroup>
             <ul><!--this ul will have a class named "social-media-links"-->
                 <li>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="https://iconsplace.com/wp-content/uploads/_icons/000000/256/png/facebook-2-icon-256.png" alt="Facebook" width="50px" height="50px"></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel=""><img src="https://iconsplace.com/wp-content/uploads/_icons/000000/256/png/facebook-2-icon-256.png" alt="Facebook" width="50px" height="50px"></a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/" target="_blank"><img src="https://freeiconshop.com/wp-content/uploads/edd/linkedin-outline.png" alt="Linked In" width="50px" height="50px"></a>
@@ -56,23 +56,21 @@
                 </aside>
             </header>
             <article>
-                <p>Profile</p>
+                <h2>Profile</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </article>
             <article>
-                <p>Basic Info</p>
-                <ul>
-                    <li>Born</li>
-                    <li>Birth Place</li>
-                    <li>Phone Number</li>
-                    <li>Address</li>
-                </ul>
-                <ul>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit</li>
-                </ul>
+                <h2>Basic Info</h2>
+                <dl>
+                    <dt>Born</dt>
+                        <dd>Lorem ipsum dolor sit</dd>
+                    <dt>Birth Place</dt>
+                        <dd>Lorem ipsum dolor sit</dd>
+                    <dt>Phone Number</dt>
+                        <dd>Lorem ipsum dolor sit</dd>
+                    <dt>Address</dt>
+                        <dd>Lorem ipsum dolor sit</dd>
+                </dl>
             </article> 
         </section>
         <section> <!--this section will have an id named "experience"-->
@@ -174,14 +172,14 @@
                 </aside>
             </header>
             <h1>Say Hello to me!</h1>
-            <form action="" id="form">
+            <form action="https://formspree.io/andres.nieto.arias@gmail.com" method="POST" id="form">
                 <label for="Name">Name</label>
                 <input type="text" value="Name" id="Name" required>
                 <label for="email">Email</label>
                 <input type="email" value="Email" id="email" required>
                 <label for="message">Message</label>
                 <textarea type="textarea" value="Message" id="message"></textarea>
-                <button type="submit" form="form">Submit</button>
+                <input type="submit" form="form">
             </form>
         </section>
     </main>
